@@ -20,32 +20,39 @@ h. Accuracy ('accuracy')
 i. Pearson correlation('pearscorr')
 j. Spearman correlation('spearcorr')
     
-Inputs
+## Inputs
 
 -labels: integer numeric vector with the sample label information.
+
 example: [1 1 1 1 2 2 2 1 2 2 2 1 2 2 1]
     
 -labelValues: floating numeric vector with sample scores. The ordering
 should correspond with the labels variable.
+
 example: [0.12 0.42 0.26 0.64 0.75 0.83 0.23 0.75 0.74 0.45 0.44 0.87 0.54 0.60 0.09]
     
 -metric: string referring to the metric for which to compute the
 trustworthiness.
+
 example: 'AUC'
     
 -xObs: observable computed value from the respective metric
+
 example: 0.62 (calculated as the AUC of the example labels and labelValues)
     
-Optional inputs:
+    
+## Optional inputs:
 
 -iters: Numeric value for iterations to create the null model.
+
 Default: 1000
 
 -plotFlag: binary value for the generation of the distribution plot after 
 trustworthiness calculation
+
 Default: true
     
-Outputs:
+## Outputs:
 
 -trustworthiness: trustworthiness pvalue calculated from the null model
 taking as reference the observable input value xObs.
