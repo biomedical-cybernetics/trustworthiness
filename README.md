@@ -10,14 +10,23 @@ and their respective values (also known as scores).
 The metrics available are:
     
 a. Mann-Witheny Pvalue ('MWpval')
+
 b. Permutation test by mean ('permmean')
+
 c. Permutation test by median ('permmedian')
+
 d. Area under the ROC-Curve ('AUC')
+
 e. Area under the Precision-Recall curve ('AUPR')
+
 f. Matthews Correlation Coefficient ('MCC')
+
 g. F-score ('Fscore')
+
 h. Accuracy ('accuracy')
+
 i. Pearson correlation('pearscorr')
+
 j. Spearman correlation('spearcorr')
     
 ## Inputs
