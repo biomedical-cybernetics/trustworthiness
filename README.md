@@ -3,8 +3,7 @@ MATLAB code for the resampling strategy to compute trustworthiness p-value
 
 Trustworthiness exploits a resampling technique based on label-reshuffling to build a null model. The labels are reshuffled uniformly at random on the embedded points whose location is maintained unaltered in the reduced space. For each random reshuffling (default is 1000), a value from a metric is computed. The collection of all these values is used to draw the null model distribution. This distribution is employed to compute the probability to get at random a separation equal or higher than the one detected by using the original labels.
 
-This program will compute a trustworthiness pvalue given an observable
-value (xObs) from a metric obtained a-priori, the labels of a dataset
+This program will compute a trustworthiness pvalue given a metric, the labels of a dataset
 and their respective values (also known as scores).
  
 The metrics available are:
@@ -45,10 +44,6 @@ trustworthiness.
 
 example: 'AUC'
     
--xObs: observable computed value from the respective metric
-
-example: 0.62 (calculated as the AUC of the example labels and labelValues)
-    
     
 ## Optional inputs:
 
@@ -65,6 +60,8 @@ Default: true
 
 -trustworthiness: trustworthiness pvalue calculated from the null model
 taking as reference the observable input value xObs.
+
+-xObs: observable computed value from the respective metric
 
 -xRand: null model with all the metric performances from the resampling 
 approach. Its length is the same as the iters variable value.
