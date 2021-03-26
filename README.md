@@ -1,4 +1,9 @@
 # trustworthiness
+
+If used, please reference it:
+
+Durán, C., Ciucci, S., Palladini, A. et al. Nonlinear machine learning pattern recognition and bacteria-metabolite multilayer network analysis of perturbed gastric microbiome. Nat Commun 12, 1926 (2021). https://doi.org/10.1038/s41467-021-22135-x
+
 MATLAB code for the resampling strategy to compute trustworthiness p-value
 
 Trustworthiness exploits a resampling technique based on label-reshuffling to build a null model. The labels are reshuffled uniformly at random on the embedded points whose location is maintained unaltered in the reduced space. For each random reshuffling (default is 1000), a value from a metric is computed. The collection of all these values is used to draw the null model distribution. This distribution is employed to compute the probability to get at random a separation equal or higher than the one detected by using the original labels.
@@ -65,6 +70,4 @@ taking as reference the observable input value xObs.
 
 -xRand: null model with all the metric performances from the resampling 
 approach. Its length is the same as the iters variable value.
-    
-If used, please reference:
-    (Article accepted. Reference will be updated after publication).    
+      
