@@ -1,9 +1,9 @@
 function [trustworthiness,xObs,xRand] = trustworthiness(labels, labelValues, metric, iters, plotFlag)
     %{
-    If used, please reference:
-    Duran, Claudio et al. (2021). Nonlinear Machine learning and multilayer network 
-    analysis of perturbed gastric microbiome. Nature Communications.
-    (Article accepted. Reference will be updated after publication).
+    Durán, C., Ciucci, S., Palladini, A. et al. Nonlinear machine learning pattern 
+    recognition and bacteria-metabolite multilayer network analysis of perturbed 
+    gastric microbiome. Nat Commun 12, 1926 (2021). 
+    https://doi.org/10.1038/s41467-021-22135-x
 
     This program will compute a trustworthiness pvalue given a metric,
     the labels of a dataset and their respective values (also known as scores).
